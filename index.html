@@ -33,19 +33,40 @@
 </head>
 
 <body>
-    <div>Choose the file below</div>
-    <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Select Path
-        </a>
+    <form action="">
+        <div>
+            <label>Select APM tools</label>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="./appdynamic.html">Appdynamic-config</a></li>
-            <li><a class="dropdown-item" href="./dynatrace.html">Dynatrac-config</a></li>
-            <li><a class="dropdown-item" href="./kafka.html">kafka-config</a></li>
-        </ul>
-    </div>
+            <select name="select1">
+                <option value="appdynamic.html">appdynamics-config</option>
+                <option value="datadog.html">Datadog-config</option>
+                <option value="newRelic.html">New Relic-config</option>
+                <option value="dynatrace.html">Dynatrace-config</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Config Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Select the API</label>
+            <select name="API" id="api">
+                <option value="">Error Budget:Watermelon-Standard</option>
+                <option value="">Customize options</option>
+            </select>
+        </div>
+        <div class="button">
+            <button type="submit"> Submit</button>
+        </div>
+    </form>
+    <div id="2"></div>
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <script src="./function.js"></script>
+    <script src="./appdynamic.js"></script>
+    <script src="./dynatrace.js"></script>
+    <script src="./datadog.js"></script>
+    <script src="./newRelic.js"></script>
+
 </body>
 
 </html>
