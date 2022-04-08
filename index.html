@@ -33,19 +33,41 @@
 </head>
 
 <body>
-    <div>Choose the file below</div>
-    <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Select Path
-        </a>
+    <div>
+        <label>Select APM tools</label>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="./appdynamic.html">Appdynamic-config</a></li>
-            <li><a class="dropdown-item" href="./dynatrace.html">Dynatrac-config</a></li>
-            <li><a class="dropdown-item" href="./kafka.html">kafka-config</a></li>
-        </ul>
+        <div class="dropdown">
+            <!-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Select Path
+            </a> -->
+
+            <select id="select1">
+                <option value="appdynamics">appdynamics-config</option>
+                <option value="datadog">Datadog-config</option>
+                <option value="New Relic">New Relic-config</option>
+                <option value="dynatrace">Dynatrace-config</option>
+            </select>
+
+        </div>
     </div>
+    <div>
+        <label for="">Config Name</label>
+        <input type="text">
+    </div>
+    <div>
+        <div>Select the API</div>
+        <select name="API" id="api">
+            <option value="">Error Budget:Watermelon-Standard</option>
+            <option value="">Customize options</option>
+        </select>
+    </div>
+    <div class="button">
+        <button type="submit" onclick=main()> Submit</button>
+    </div>
+    <div class="1"></div>
+    <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 [{
         "name": "broker",
-        "type":"text",
+        "type":"password",
         "required": true,
         "dataype": "String",
         "default": "xyz",
