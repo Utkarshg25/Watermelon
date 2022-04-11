@@ -1,6 +1,6 @@
-document.querySelector('form').addEventListener('submit', function (e) {
+document.getElementById('mainForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    let x = document.querySelector('form').elements;
+    let x = document.getElementById('mainForm').elements;
     const value = x['select1'].value;
     fetch(value)
         .then(response => response.text())

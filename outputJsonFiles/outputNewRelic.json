@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Basic url",
+        "type":"url",
+        "required":true,
+        "placeholder":"Base Url",
+        "datatype":"string",
+        "default":"http://xyz.com",
+        "description" :"required to input"
+    },
+    {
+        "name":"User Id",
+        "type":"text",
+        "required":true,
+        "placeholder":"User Id",
+        "datatype":"string",
+        "default":"xyz",
+        "description" :"required to input"
+    },
+    {
+        "name":"Password",
+        "type":"password",
+        "required":true,
+        "placeholder":"Password",
+        "datatype":"string",
+        "default":"xyz",
+        "description" :"required to input"
+    },
+    {
+        "name":"Application Name",
+        "type":"text",
+        "required":true,
+        "placeholder":"Application Name",
+        "datatype":"string",
+        "default":"xyz",
+        "description" :"required to input"
+    }
+]
