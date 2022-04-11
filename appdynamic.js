@@ -1,4 +1,6 @@
-const fs = require('fs');
+const lib = require("fs");
+
+console.log("FS", fs);
 
 function appDynamicform() {
     fetch('appdynamics.json')
@@ -34,8 +36,10 @@ function appDynamicform() {
             document.getElementById('appdynamicform').addEventListener('submit', function (e) {
                 e.preventDefault();
                 let x = document.getElementById('appdynamicform').elements;
+
                 for (var i = 0; i < data.length; i++) {
                     const value = x[data[i].name].value;
+
                     console.log(value);
                 }
 

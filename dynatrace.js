@@ -17,10 +17,24 @@ function dynatraceform() {
                 newfield.style.margin = "2px";
                 newfield.style.width = "300px";
 
-                document.getElementById("1").appendChild(label1);
-                document.getElementById("1").appendChild(newfield);
-                document.getElementById("1").appendChild(document.createElement('br'));
+                document.getElementById("dynatrace").appendChild(label1);
+                document.getElementById("dynatrace").appendChild(newfield);
+                document.getElementById("dynatrace").appendChild(document.createElement('br'));
 
             }
+            return data;
+        })
+        .then(function (data) {
+            document.getElementById('dynatraceform').addEventListener('submit', function (e) {
+                e.preventDefault();
+                let x = document.getElementById('dynatrace').elements;
+
+                for (var i = 0; i < data.length; i++) {
+                    const value = x[data[i].name].value;
+
+                    console.log(value);
+                }
+
+            });
         })
 }

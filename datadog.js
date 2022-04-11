@@ -18,10 +18,24 @@ function datadogform() {
                 newfield.style.margin = "2px";
                 newfield.style.width = "300px";
 
-                document.getElementById("1").appendChild(label1);
-                document.getElementById("1").appendChild(newfield);
-                document.getElementById("1").appendChild(document.createElement('br'));
+                document.getElementById("datadog").appendChild(label1);
+                document.getElementById("datadog").appendChild(newfield);
+                document.getElementById("datadog").appendChild(document.createElement('br'));
 
             }
+            return data;
+        })
+        .then(function (data) {
+            document.getElementById('datadogform').addEventListener('submit', function (e) {
+                e.preventDefault();
+                let x = document.getElementById('datadog').elements;
+
+                for (var i = 0; i < data.length; i++) {
+                    const value = x[data[i].name].value;
+
+                    console.log(value);
+                }
+
+            });
         })
 }
