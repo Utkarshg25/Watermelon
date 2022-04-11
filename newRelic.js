@@ -18,10 +18,24 @@ function newRelicform() {
                 newfield.style.margin = "2px";
                 newfield.style.width = "300px";
 
-                document.getElementById("1").appendChild(label1);
-                document.getElementById("1").appendChild(newfield);
-                document.getElementById("1").appendChild(document.createElement('br'));
+                document.getElementById("newRelic").appendChild(label1);
+                document.getElementById("newRelic").appendChild(newfield);
+                document.getElementById("newRelic").appendChild(document.createElement('br'));
 
             }
+            return data;
+        })
+        .then(function (data) {
+            document.getElementById('newRelicform').addEventListener('submit', function (e) {
+                e.preventDefault();
+                let x = document.getElementById('newRelic').elements;
+
+                for (var i = 0; i < data.length; i++) {
+                    const value = x[data[i].name].value;
+
+                    console.log(value);
+                }
+
+            });
         })
 }

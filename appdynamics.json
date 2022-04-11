@@ -1,37 +1,38 @@
-[{
-        "name": "userid",
-        "type":"text",
-        "required": true,
-        "placeholder":"userid",
-        "dataype": "String",
-        "default": "xyz",
-        "description": "required to input"
-    },
-    {
-        "name": "url",
-        "type":"url",
-        "required": false,
-        "placeholder":"url",
-        "dataype": "String",
-        "default": "http://xyz.com",
-        "description": "required to input"
-    },
-    {
-        "name": "password",
-        "type":"password",
-        "required": true,
-        "placeholder":"password",
-        "dataype": "String",
-        "default": "xyz",
-        "description": "required to input"
-    },
-    {
-        "name": "timezone",
-        "type":"datetime-local",
-        "required": true,
-        "placeholder":"timezone",
-        "dataype": "String",
-        "default": "xyz",
-        "description": "required to input"
-    }
+[
+  {
+    "name": "userid",
+    "type": "text",
+    "required": true,
+    "placeholder": "userid",
+    "dataype": "String",
+    "default": "xyz",
+    "description": "required to input"
+  },
+  {
+    "name": "url",
+    "type": "url",
+    "required": false,
+    "placeholder": "url",
+    "dataype": "String",
+    "default": "http://xyz.com",
+    "description": "required to input"
+  },
+  {
+    "name": "password",
+    "type": "password",
+    "required": true,
+    "placeholder": "password",
+    "dataype": "String",
+    "default": "xyz",
+    "description": "required to input"
+  },
+  {
+    "name": "timezone",
+    "type": "datetime-local",
+    "required": true,
+    "placeholder": "timezone",
+    "dataype": "String",
+    "default": "xyz",
+    "description": "required to input"
+  }
 ]
